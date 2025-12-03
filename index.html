@@ -133,10 +133,27 @@
                         <h2>🧠 Previous Years' Challenge</h2>
                         <span id="score-display">Score: 0 / 0</span>
                     </div>
+                    <div class="filter-container">
+                        <label for="category-filter">Filter by Category:</label>
+                        <select id="category-filter" onchange="filterByCategory()">
+                            <option value="All">All Categories</option>
+                            <option value="Vocabulary">Vocabulary</option>
+                            <option value="Error Spotting">Error Spotting</option>
+                            <option value="Grammar">Grammar</option>
+                            <option value="Idioms & Phrases">Idioms & Phrases</option>
+                            <option value="One Word Substitution">One Word Substitution</option>
+                            <option value="Spelling">Spelling</option>
+                            <option value="Sentence Rearrangement">Sentence Rearrangement</option>
+                            <option value="Voice Transformation">Voice Transformation</option>
+                            <option value="Direct/Indirect Speech">Direct/Indirect Speech</option>
+                            <option value="Fill in the Blanks">Fill in the Blanks</option>
+                        </select>
+                        <span id="filter-count"></span>
+                    </div>
                     <div id="quiz-list">
                         <!-- Quiz items injected via JS -->
                     </div>
-                    <button id="reset-quiz" onclick="renderQuiz()">Reset Quiz</button>
+                    <button id="reset-quiz" onclick="resetQuiz()">Reset Quiz</button>
                 </div>
             </div>
 

@@ -23,11 +23,12 @@ const comprehensionData = [
 ];
 
 // Data: Grammar Quiz
-const grammarQuizData = [
+let grammarQuizData = [
     // --- EXISTING QUESTIONS ---
     // Vocabulary - Synonyms
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of VERACITY", 
         options: ["Tenacity", "Wisdom", "Truthfulness", "Reliability"], 
         answer: 2,
@@ -35,7 +36,8 @@ const grammarQuizData = [
     },
     // ... (Keep all other existing questions from previous updates) ...
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of ABOMINABLE", 
         options: ["Detestable", "Flattering", "Attractive", "Sloppy"], 
         answer: 0,
@@ -48,6 +50,7 @@ const grammarQuizData = [
     // Part A - Antonyms
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Antonym of FORTITUDE",
         options: ["Timidity", "Laxity", "Placidity", "Ambition"],
         answer: 0,
@@ -55,6 +58,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Antonym of CONCUR",
         options: ["Pertain", "Reveal", "Oppose", "Delay"],
         answer: 2,
@@ -62,6 +66,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Antonym of PENCHANT",
         options: ["Dislike", "Bias", "Repulsion", "Hatred"],
         answer: 0,
@@ -69,59 +74,67 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Antonym of RENEGADE",
         options: ["Traitor", "Heretic", "Loyalist", "Fugitive"],
         answer: 2,
-        explanation: "<strong>Renegade</strong> is a person who deserts and betrays an organization.<br>• <strong>Loyalist</strong> is a person who remains loyal."
+        explanation: "<strong>Renegade</strong> is a person who deserts and betrays an organization.<br>• <strong>Loyalist</strong> (Correct): A person who remains loyal.<br>• <em>Traitor</em>: A person who betrays a friend or country.<br>• <em>Heretic</em>: A person holding an opinion at odds with what is generally accepted.<br>• <em>Fugitive</em>: A person who has escaped from a place or is in hiding."
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Antonym of CRYPTIC",
         options: ["Tomblike", "Secret", "Famous", "Candid"],
         answer: 3,
-        explanation: "<strong>Cryptic</strong> means mysterious or obscure.<br>• <strong>Candid</strong> means truthful and straightforward (frank)."
+        explanation: "<strong>Cryptic</strong> means mysterious or obscure.<br>• <strong>Candid</strong> (Correct): Truthful and straightforward (Frank).<br>• <em>Tomblike</em>: Resembling a tomb; gloomy.<br>• <em>Secret</em>: Not known or seen.<br>• <em>Famous</em>: Known about by many people."
     },
 
     // Part A - Synonyms
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of INTEGRITY",
         options: ["Edifice", "Honesty", "Essence", "Embodiment"],
         answer: 1,
-        explanation: "<strong>Integrity</strong> means the quality of being honest and having strong moral principles."
+        explanation: "<strong>Integrity</strong> means the quality of being honest and having strong moral principles.<br>• <strong>Honesty</strong> (Correct): The quality of being honest.<br>• <em>Edifice</em>: A complex system of beliefs or a large building.<br>• <em>Essence</em>: The intrinsic nature or indispensable quality of something.<br>• <em>Embodiment</em>: A tangible or visible form of an idea."
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of IMPROMPTU",
         options: ["Offhand", "Unimportant", "Unreal", "Effective"],
         answer: 0,
-        explanation: "<strong>Impromptu</strong> means done without being planned.<br>• <strong>Offhand</strong> means unceremoniously or without thought."
+        explanation: "<strong>Impromptu</strong> means done without being planned or rehearsed.<br>• <strong>Offhand</strong> (Correct): Unceremoniously or without previous thought.<br>• <em>Unimportant</em>: Lacking in importance.<br>• <em>Unreal</em>: Imaginary or illusory.<br>• <em>Effective</em>: Successful in producing a desired result."
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of MAYHEM",
         options: ["Jubilation", "Havoc", "Excitement", "Defeat"],
         answer: 1,
-        explanation: "<strong>Mayhem</strong> means violent or damaging disorder; chaos.<br>• <strong>Havoc</strong> means widespread destruction."
+        explanation: "<strong>Mayhem</strong> means violent or damaging disorder; chaos.<br>• <strong>Havoc</strong> (Correct): Widespread destruction.<br>• <em>Jubilation</em>: A feeling of great happiness.<br>• <em>Excitement</em>: A feeling of great enthusiasm.<br>• <em>Defeat</em>: An instance of losing a battle."
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of FALLACY",
         options: ["False Opinion", "Deep fall", "Dream", "Death"],
         answer: 0,
-        explanation: "<strong>Fallacy</strong> is a mistaken belief, especially one based on unsound argument."
+        explanation: "<strong>Fallacy</strong> is a mistaken belief, especially one based on unsound argument.<br>• <strong>False Opinion</strong> (Correct): An incorrect idea or belief.<br>• <em>Deep fall</em>: A literal drop from a height.<br>• <em>Dream</em>: Thoughts or images during sleep.<br>• <em>Death</em>: The end of life."
     },
     {
         type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of BEHEST",
         options: ["Command", "See", "Attach", "Harm"],
         answer: 0,
-        explanation: "<strong>Behest</strong> means a person's orders or command."
+        explanation: "<strong>Behest</strong> means a person's orders or command.<br>• <strong>Command</strong> (Correct): An authoritative order.<br>• <em>See</em>: To perceive with the eyes.<br>• <em>Attach</em>: To join or fasten.<br>• <em>Harm</em>: Physical injury."
     },
 
     // Spelling Check (MPSC)
     {
         type: 'mcq',
+        category: 'Spelling',
         q: "Choose the correctly spelt word",
         options: ["Privilege", "Previlege", "Privelege", "Previleage"],
         answer: 0,
@@ -129,6 +142,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Spelling',
         q: "Choose the correctly spelt word",
         options: ["Mountainer", "Mountaineer", "Mounteener", "Mountineer"],
         answer: 1,
@@ -136,6 +150,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Spelling',
         q: "Choose the correctly spelt word",
         options: ["Satellite", "Setellite", "Settlelite", "Satelite"],
         answer: 0,
@@ -143,6 +158,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Spelling',
         q: "Choose the correctly spelt word",
         options: ["Sanctimonous", "Sanctimoneous", "Sanctimonious", "Sanctiminious"],
         answer: 2,
@@ -150,6 +166,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Spelling',
         q: "Choose the correctly spelt word",
         options: ["Auxiliary", "Axiliary", "Auxiliury", "Auxilary"],
         answer: 0,
@@ -159,6 +176,7 @@ const grammarQuizData = [
     // Sentence Rearrangement (P-Q-R-S)
     {
         type: 'mcq',
+        category: 'Sentence Rearrangement',
         q: "Rearrange: <strong>Ashoka</strong><br>(P) In the cause of religion<br>(Q) although devout and zealous<br>(R) in performing his kingly duties<br>(S) was equally energetic",
         options: ["QSRP", "QPSR", "SPQR", "SRPQ"],
         answer: 0,
@@ -196,6 +214,7 @@ const grammarQuizData = [
     // Grammar Improvement
     {
         type: 'mcq',
+        category: 'Grammar',
         q: "Improvement: My neighbour <u>is having</u> two cars.",
         options: ["is owning", "has", "is possessing", "No improvement"],
         answer: 1,
@@ -233,6 +252,7 @@ const grammarQuizData = [
     // Idioms & Phrases
     {
         type: 'mcq',
+        category: 'Idioms & Phrases',
         q: "Idiom: 'To carry all before one'",
         options: ["Finish quickly", "Make a promise", "Be free from danger", "Be completely successful"],
         answer: 3,
@@ -270,6 +290,7 @@ const grammarQuizData = [
     // Question Tags
     {
         type: 'mcq',
+        category: 'Grammar',
         q: "Tag: Tomorrow we will attend our college, ________?",
         options: ["Shall we", "Will we", "Won't we", "Shouldn't we"],
         answer: 2,
@@ -307,6 +328,7 @@ const grammarQuizData = [
     // Voice Transformation
     {
         type: 'mcq',
+        category: 'Voice Transformation',
         q: "Passive: 'Alexander expected to conquer the world.'",
         options: ["It was expected by Alexander that he should conquer...", "It was expected by Alexander that he would conquer...", "It was expected by Alexander that he will conquer...", "It had been expected by Alexander..."],
         answer: 1,
@@ -335,6 +357,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Voice Transformation',
         q: "Voice: 'By this time he will have received my letter.'",
         options: ["By this time my letter will have been received by him.", "By this time letter has reached him.", "The letter, by this time, has been delivered to him.", "By this time the letter has been received by him."],
         answer: 0,
@@ -344,6 +367,7 @@ const grammarQuizData = [
     // Direct/Indirect Speech
     {
         type: 'mcq',
+        category: 'Direct/Indirect Speech',
         q: "Direct: The girl wondered where the sparrows had gone.",
         options: ["The girl said, 'Oh! where the sparrows have gone?'", "The girl said, 'Oh! where are the sparrows?'", "The girl said, 'Oh! where had the sparrows gone?'", "The girl said, 'Oh! where have the sparrows gone?'"],
         answer: 3,
@@ -381,6 +405,7 @@ const grammarQuizData = [
     // Common Error Spotting
     {
         type: 'mcq',
+        category: 'Error Spotting',
         q: "Error Spotting: 'Susan has returned back her book to the library.'",
         options: ["Susan has returned", "To the library", "Back her book", "No error"],
         answer: 2,
@@ -388,6 +413,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Error Spotting',
         q: "Error Spotting: 'We received much help from the neighbours'",
         options: ["From the neighbours", "We received", "Much help", "No error"],
         answer: 3,
@@ -395,6 +421,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Error Spotting',
         q: "Error Spotting: 'Did you hear many news about the political situation...'",
         options: ["About the political situation...", "Did you hear", "Many news", "No error"],
         answer: 2,
@@ -402,6 +429,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Error Spotting',
         q: "Error Spotting: 'The Russian ambassador's whereabouts is not known to anyone'",
         options: ["Whereabouts is", "Not known to anyone", "The Russian's ambassador", "No error"],
         answer: 0,
@@ -409,6 +437,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Error Spotting',
         q: "Error Spotting: 'We have finished our work three hours ago and have been waiting...'",
         options: ["Three hours ago and have been waiting", "We have finished our work", "For you since, then", "No error"],
         answer: 1,
@@ -416,29 +445,32 @@ const grammarQuizData = [
     },
     
     // --- REST OF ORIGINAL DATA ---
-    { type: 'mcq', q: "Synonym of EXTRAVAGANT", options: ["Pompous", "Reckless", "Prodigal", "Miserly"], answer: 2, explanation: "<strong>Extravagant</strong> means lacking restraint in spending money.<br>• <strong>Prodigal</strong> means spending money freely and recklessly.<br>• <em>Pompous</em>: self-important.<br>• <em>Miserly</em>: stingy." },
-    { type: 'mcq', q: "Synonym of ADMONISHED", options: ["Admired", "Advised", "Censured", "Dismissed"], answer: 2, explanation: "<strong>Admonished</strong> means to warn or reprimand someone firmly.<br>• <strong>Censured</strong> means to express severe disapproval.<br>• <em>Admired</em>: respected.<br>• <em>Dismissed</em>: sent away." },
-    { type: 'mcq', q: "Synonym of IMMACULATE", options: ["Spotless", "Coloured", "Gorgeous", "Simple"], answer: 0, explanation: "<strong>Immaculate</strong> means perfectly clean, neat, or tidy.<br>• <strong>Spotless</strong> is the direct synonym.<br>• <em>Gorgeous</em>: beautiful.<br>• <em>Simple</em>: uncomplicated." },
+    { type: 'mcq', category: 'Vocabulary', q: "Synonym of EXTRAVAGANT", options: ["Pompous", "Reckless", "Prodigal", "Miserly"], answer: 2, explanation: "<strong>Extravagant</strong> means lacking restraint in spending money.<br>• <strong>Prodigal</strong> means spending money freely and recklessly.<br>• <em>Pompous</em>: self-important.<br>• <em>Miserly</em>: stingy." },
+    { type: 'mcq', category: 'Vocabulary', q: "Synonym of ADMONISHED", options: ["Admired", "Advised", "Censured", "Dismissed"], answer: 2, explanation: "<strong>Admonished</strong> means to warn or reprimand someone firmly.<br>• <strong>Censured</strong> means to express severe disapproval.<br>• <em>Admired</em>: respected.<br>• <em>Dismissed</em>: sent away." },
+    { type: 'mcq', category: 'Vocabulary', q: "Synonym of IMMACULATE", options: ["Spotless", "Coloured", "Gorgeous", "Simple"], answer: 0, explanation: "<strong>Immaculate</strong> means perfectly clean, neat, or tidy.<br>• <strong>Spotless</strong> is the direct synonym.<br>• <em>Gorgeous</em>: beautiful.<br>• <em>Simple</em>: uncomplicated." },
     // ... (Include all previous data here to ensure nothing is lost) ...
     // --- PRACTICE DRILLS #1-8 QUESTIONS (Advanced & Tricky) ---
 
     // Advanced Vocabulary
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Antonym of LACONIC", 
         options: ["Brief", "Verbose", "Silent", "Uncivilized"], 
         answer: 1,
         explanation: "<strong>Laconic</strong> means using very few words (concise).<br>• <strong>Verbose</strong> (Correct): Using more words than needed.<br>• <em>Brief</em>: Synonym of Laconic.<br>• <em>Silent</em>: Not speaking.<br>• <em>Uncivilized</em>: Not socially advanced."
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of OBSEQUIOUS", 
         options: ["Defiant", "Servile", "Honest", "Clever"], 
         answer: 1,
         explanation: "<strong>Obsequious</strong> means obedient or attentive to an excessive or servile degree.<br>• <strong>Servile</strong> (Correct): Showing an excessive willingness to serve or please others.<br>• <em>Defiant</em>: Showing open resistance.<br>• <em>Honest</em>: Truthful.<br>• <em>Clever</em>: Intelligent."
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of EBULLIENT", 
         options: ["Deceitful", "Enthusiastic", "Aggressive", "Sorrowful"], 
         answer: 1,
@@ -447,7 +479,8 @@ const grammarQuizData = [
 
     // Tricky Grammar
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Grammar',
         q: "Grammar: 'Hardly ______ the station when the train left.'", 
         options: ["did I reach", "I had reached", "had I reached", "reached I"], 
         answer: 2,
@@ -468,35 +501,40 @@ const grammarQuizData = [
         explanation: "<strong>One's</strong>. The possessive form of 'One' is always 'One's'."
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Grammar',
         q: "Grammar: 'Each of the boys ______ done ______ work.'", 
         options: ["have / their", "has / his", "have / his", "has / their"], 
         answer: 1,
         explanation: "<strong>Has / His</strong>. 'Each' is always singular, so it takes a singular verb and pronoun."
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Grammar',
         q: "Grammar: 'If I ______ a bird, I would fly.'", 
         options: ["was", "am", "were"], 
         answer: 2,
         explanation: "<strong>Were</strong>. In hypothetical subjunctive conditionals, always use 'were' for all subjects."
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Grammar',
         q: "Grammar: 'Let ______ go together.'", 
         options: ["you and I", "you and me"], 
         answer: 1,
         explanation: "<strong>You and me</strong>. 'Let' is followed by object pronouns (me, us, him, her)."
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Grammar',
         q: "Sentence Improvement: 'I prefer coffee <u>than</u> tea.'", 
         options: ["to", "over", "from", "No improvement"], 
         answer: 0,
         explanation: "<strong>To</strong>. Prefer is always followed by 'to', not 'than'."
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Grammar',
         q: "Sentence Improvement: 'He <u>returned back</u> home.'", 
         options: ["returned", "went back", "came back", "No improvement"], 
         answer: 0,
@@ -504,12 +542,14 @@ const grammarQuizData = [
     },
     {
         type: 'text',
+        category: 'Voice Transformation',
         q: "Passive: 'Who taught you English?'",
         answer: "By whom were you taught English",
         explanation: "Passive of 'Who' starts with 'By whom'. Past tense 'taught' becomes 'were taught'."
     },
     {
         type: 'mcq',
+        category: 'Grammar',
         q: "Subject-Verb: 'Bread and butter ______ his favorite breakfast.'",
         options: ["are", "is"],
         answer: 1,
@@ -517,6 +557,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Grammar',
         q: "Subject-Verb: 'The quality of the mangoes ______ not good.'",
         options: ["was", "were"],
         answer: 0,
@@ -524,6 +565,7 @@ const grammarQuizData = [
     },
     {
         type: 'mcq',
+        category: 'Grammar',
         q: "Subject-Verb: 'Many a student ______ tried.'",
         options: ["have", "has"],
         answer: 1,
@@ -534,119 +576,136 @@ const grammarQuizData = [
 
     // Synonyms (Updated with full explanations)
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of COMPASSION", 
         options: ["Sympathy", "Destroy", "Yielding", "Difficult"], 
         answer: 0, 
         explanation: "<strong>Compassion</strong> means sympathetic pity and concern for the sufferings of others.<br>• <strong>Sympathy</strong> (Correct): Feelings of pity and sorrow for someone else's misfortune.<br>• <em>Destroy</em>: To end the existence of something.<br>• <em>Yielding</em>: Giving way to arguments or pressure.<br>• <em>Difficult</em>: Needing much effort or skill." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of CALAMITY", 
         options: ["Tiny", "Disaster", "Prodigal", "Appeal"], 
         answer: 1, 
         explanation: "<strong>Calamity</strong> means an event causing great and often sudden damage or distress.<br>• <strong>Disaster</strong> (Correct): A sudden accident or natural catastrophe.<br>• <em>Tiny</em>: Very small.<br>• <em>Prodigal</em>: Spending money freely and recklessly.<br>• <em>Appeal</em>: Make a serious or urgent request." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of DISPUTE", 
         options: ["Detestable", "Phony", "Conflict", "Disaster"], 
         answer: 2, 
         explanation: "<strong>Dispute</strong> means a disagreement, argument, or debate.<br>• <strong>Conflict</strong> (Correct): A serious disagreement or argument.<br>• <em>Detestable</em>: Deserving intense dislike.<br>• <em>Phony</em>: Not genuine; fake.<br>• <em>Disaster</em>: A sudden event causing great damage." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of DERIVE", 
         options: ["Prodigal", "Spotless", "Obtain", "Dictum"], 
         answer: 2, 
         explanation: "<strong>Derive</strong> means to obtain something from a specified source.<br>• <strong>Obtain</strong> (Correct): To get, acquire, or secure.<br>• <em>Prodigal</em>: Wasteful.<br>• <em>Spotless</em>: Absolutely clean.<br>• <em>Dictum</em>: A formal pronouncement." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of SUSTAIN", 
         options: ["Calming", "Endeavour", "Preserve", "Truthfulness"], 
         answer: 2, 
         explanation: "<strong>Sustain</strong> means to strengthen or support physically or mentally.<br>• <strong>Preserve</strong> (Correct): To maintain something in its original or existing state.<br>• <em>Calming</em>: Soothing.<br>• <em>Endeavour</em>: Try hard to do or achieve something.<br>• <em>Truthfulness</em>: The fact of being true." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of GRASP", 
         options: ["Faithful", "Initiate", "Clasp", "Disaster"], 
         answer: 2, 
         explanation: "<strong>Grasp</strong> means to seize and hold firmly.<br>• <strong>Clasp</strong> (Correct): To grasp (something) tightly with one's hand.<br>• <em>Faithful</em>: Loyal and steadfast.<br>• <em>Initiate</em>: To cause a process to begin.<br>• <em>Disaster</em>: A sudden accident." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of ORIGINATE", 
         options: ["Sympathy", "Spendthrift", "Initiate", "Clasp"], 
         answer: 2, 
         explanation: "<strong>Originate</strong> means to have a specified beginning.<br>• <strong>Initiate</strong> (Correct): To cause a process or action to begin.<br>• <em>Sympathy</em>: Feelings of pity.<br>• <em>Spendthrift</em>: A person who spends money irresponsibly.<br>• <em>Clasp</em>: Grasp tightly." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of RUPTURE", 
         options: ["Spotless", "Injurious", "Prodigal", "Break"], 
         answer: 3, 
         explanation: "<strong>Rupture</strong> means to break or burst suddenly.<br>• <strong>Break</strong> (Correct): To separate or cause to separate into pieces.<br>• <em>Spotless</em>: Clean.<br>• <em>Injurious</em>: Causing harm.<br>• <em>Prodigal</em>: Wasteful." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of RAZE", 
         options: ["Unpolished", "Destroy", "Yielding", "Sympathy"], 
         answer: 1, 
         explanation: "<strong>Raze</strong> means to completely destroy (a building, town, or other site).<br>• <strong>Destroy</strong> (Correct): To put an end to the existence of something.<br>• <em>Unpolished</em>: Lacking sophistication.<br>• <em>Yielding</em>: Compliant.<br>• <em>Sympathy</em>: Compassion." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of GASH", 
         options: ["Censured", "Cut", "Endeavour", "Difficult"], 
         answer: 1, 
         explanation: "<strong>Gash</strong> means a long, deep cut or wound.<br>• <strong>Cut</strong> (Correct): An incision or wound.<br>• <em>Censured</em>: Expressed severe disapproval.<br>• <em>Endeavour</em>: Attempt.<br>• <em>Difficult</em>: Hard to do." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of PLUNGE", 
         options: ["Fall", "Spotless", "Conflict", "Endeavour"], 
         answer: 0, 
         explanation: "<strong>Plunge</strong> means to jump or dive quickly.<br>• <strong>Fall</strong> (Correct): To drop or descend.<br>• <em>Spotless</em>: Clean.<br>• <em>Conflict</em>: A disagreement.<br>• <em>Endeavour</em>: An attempt." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of MICROSCOPIC", 
         options: ["Tiny", "Preserve", "Disaster", "Prodigal"], 
         answer: 0, 
         explanation: "<strong>Microscopic</strong> means so small as to be visible only with a microscope.<br>• <strong>Tiny</strong> (Correct): Very small.<br>• <em>Preserve</em>: To maintain.<br>• <em>Disaster</em>: A catastrophe.<br>• <em>Prodigal</em>: Wasteful." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of ATTEMPT", 
         options: ["Censured", "Calming", "Endeavour", "Clasp"], 
         answer: 2, 
         explanation: "<strong>Attempt</strong> means to make an effort to achieve something.<br>• <strong>Endeavour</strong> (Correct): Try hard to do or achieve something.<br>• <em>Censured</em>: Reprimanded.<br>• <em>Calming</em>: Soothing.<br>• <em>Clasp</em>: Hold tightly." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of DEVOUT", 
         options: ["Truthfulness", "Appeal", "Obtain", "Faithful"], 
         answer: 3, 
         explanation: "<strong>Devout</strong> means having or showing deep religious feeling or commitment.<br>• <strong>Faithful</strong> (Correct): Loyal, constant, and steadfast.<br>• <em>Truthfulness</em>: Honesty.<br>• <em>Appeal</em>: Request.<br>• <em>Obtain</em>: Get." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of PRODIGAL", 
         options: ["Spendthrift", "Destroy", "Initiate", "Preserve"], 
         answer: 0, 
         explanation: "<strong>Prodigal</strong> means spending money or resources freely and recklessly.<br>• <strong>Spendthrift</strong> (Correct): A person who spends money in an irresponsible way.<br>• <em>Destroy</em>: Demolish.<br>• <em>Initiate</em>: Start.<br>• <em>Preserve</em>: Keep safe." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of CAUTION", 
         options: ["Unnatural", "Warn", "Spendthrift", "Conflict"], 
         answer: 1, 
         explanation: "<strong>Caution</strong> means care taken to avoid danger or mistakes.<br>• <strong>Warn</strong> (Correct): To inform someone in advance of an impending or possible danger.<br>• <em>Unnatural</em>: Abnormal.<br>• <em>Spendthrift</em>: Waster of money.<br>• <em>Conflict</em>: Dispute." 
     },
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Synonym of IMPLORE", 
         options: ["Disaster", "Appeal", "Preserve", "Spendthrift"], 
         answer: 1, 
@@ -655,7 +714,8 @@ const grammarQuizData = [
 
     // Antonyms (Updated with full explanations)
     { 
-        type: 'mcq', 
+        type: 'mcq',
+        category: 'Vocabulary',
         q: "Antonym of EXPLICIT", 
         options: ["unreserved", "plain", "absolute", "uncertain"], 
         answer: 3, 
@@ -880,7 +940,7 @@ const grammarQuizData = [
     },
 
     // Idioms
-    { type: 'mcq', q: "Idiom: 'To make inroads'", options: ["To succeed by reducing the power of something else", "An unworthy person in the family", "To be in a bad mood", "To be in a difficult situation"], answer: 0, explanation: "Means <strong>to progress or succeed</strong>, especially at the expense of something else." },
+    { type: 'mcq', category: 'Idioms & Phrases', q: "Idiom: 'To make inroads'", options: ["To succeed by reducing the power of something else", "An unworthy person in the family", "To be in a bad mood", "To be in a difficult situation"], answer: 0, explanation: "Means <strong>to progress or succeed</strong>, especially at the expense of something else." },
     { type: 'mcq', q: "Idiom: 'Have somebody taped'", options: ["At a distance", "To be in a difficult situation", "To be optimistic", "To understand somebody completely and deal with them successfully"], answer: 3, explanation: "Means <strong>to understand someone completely</strong> and know how to deal with them." },
     { type: 'mcq', q: "Idiom: 'To be in a jam'", options: ["To be in a difficult situation", "Strange person", "Work late into the night", "An unworthy person in the family"], answer: 0, explanation: "Means <strong>to be in a difficult situation</strong> or predicament." },
     { type: 'mcq', q: "Idiom: 'To have nine lives'", options: ["At a distance", "To be very lucky in dangerous situations", "To be in a difficult situation", "Cheerful"], answer: 1, explanation: "Means <strong>to be very lucky</strong> in avoiding death or dangerous situations." },
@@ -906,7 +966,7 @@ const grammarQuizData = [
     { type: 'mcq', q: "Idiom: 'To jump on the bandwagon'", options: ["Very fast", "To follow a popular trend or activity", "When the person... arrives", "Paying no attention"], answer: 1, explanation: "Means <strong>to join others in doing or supporting something likely to be successful</strong>." },
 
     // One Word Substitution
-    { type: 'mcq', q: "One Word: A verse letter.", options: ["Unanimous", "Septuagenarian", "Kleptomania", "Epistle"], answer: 3, explanation: "<strong>Epistle</strong> means a poem or other literary work in the form of a letter." },
+    { type: 'mcq', category: 'One Word Substitution', q: "One Word: A verse letter.", options: ["Unanimous", "Septuagenarian", "Kleptomania", "Epistle"], answer: 3, explanation: "<strong>Epistle</strong> means a poem or other literary work in the form of a letter." },
     { type: 'mcq', q: "One Word: A building where dead bodies are kept.", options: ["Cemetery", "Mortuary", "Crematory", "Crypt"], answer: 1, explanation: "<strong>Mortuary</strong> is a room or building in which dead bodies are kept, for hygienic storage or for examination." },
     { type: 'mcq', q: "One Word: One who is all powerful.", options: ["Omniscient", "Omnipotent", "Omnipresent", "Omnivorous"], answer: 1, explanation: "<strong>Omnipotent</strong> means having unlimited power." },
     { type: 'mcq', q: "One Word: A person who doubts the truth of what is being told.", options: ["Hypochondriac", "Sceptic", "Septuagenarian", "Anthropology"], answer: 1, explanation: "<strong>Sceptic</strong> is a person inclined to question or doubt accepted opinions." },
@@ -924,7 +984,7 @@ const grammarQuizData = [
     { type: 'mcq', q: "One Word: He is an expert in the study of ancient societies.", options: ["Omnipotent", "Anthropology", "Downsize", "Infiltrator"], answer: 1, explanation: "<strong>Anthropology</strong> is the study of human societies and cultures and their development." },
 
     // Fill in the Blanks
-    { type: 'text', q: "The newspaper is ____ a competition to win a cash prize.", answer: "featuring", explanation: "'Featuring' means to have as a prominent attribute or aspect." },
+    { type: 'text', category: 'Fill in the Blanks', q: "The newspaper is ____ a competition to win a cash prize.", answer: "featuring", explanation: "'Featuring' means to have as a prominent attribute or aspect." },
     { type: 'text', q: "The ____ between the son and the father began a few years ago.", answer: "conflict", explanation: "'Conflict' fits the context of a disagreement or argument." },
     { type: 'text', q: "Ramu ____ his mind after hearing the story about Sayed.", answer: "changed", explanation: "'Changed his mind' is a common phrase meaning to alter one's opinion." },
     { type: 'text', q: "There were ____ people present when the award ceremony was held.", answer: "several", explanation: "'Several' is used to refer to a number more than two but not many." },
@@ -945,7 +1005,7 @@ const grammarQuizData = [
     { type: 'text', q: "Sue is ____ in our group about exam results.", answer: "the most nervous", explanation: "Superlative 'the most nervous' is used for comparing one person to a group." },
 
     // Common Error Spotting
-    { type: 'mcq', q: "Error Spotting: 'The alarm is triggered (A) / by a sensor (B) / that detects movement (C) / No error (D).'", options: ["A", "B", "C", "D"], answer: 3, explanation: "<strong>No error</strong>. The sentence is grammatically correct." },
+    { type: 'mcq', category: 'Error Spotting', q: "Error Spotting: 'The alarm is triggered (A) / by a sensor (B) / that detects movement (C) / No error (D).'", options: ["A", "B", "C", "D"], answer: 3, explanation: "<strong>No error</strong>. The sentence is grammatically correct." },
     { type: 'mcq', q: "Error Spotting: 'My father taught (A) / me how to (B) / play guitar (C).'", options: ["place", "after all", "is slow", "play guitar"], answer: 3, explanation: "Error in C. Instruments usually take 'the'. Should be 'play <strong>the</strong> guitar'." },
     { type: 'mcq', q: "Error Spotting: 'Bridges across (A) / this river are (B) / hundreds of years old (C) / No error (D).'", options: ["A", "B", "C", "D"], answer: 3, explanation: "<strong>No error</strong>. The sentence is grammatically correct." },
     { type: 'mcq', q: "Error Spotting: 'Henry and me (A) / have been invited (B) / to Jack's party (C) / No error (D).'", options: ["A", "B", "C", "D"], answer: 0, explanation: "Error in A. Subject pronoun 'I' should be used. 'Henry and <strong>I</strong>'." },
@@ -987,6 +1047,35 @@ const grammarQuizData = [
 ];
 
 // ... (Previous data arrays remain unchanged) ...
+
+// Ensure all questions have a category
+grammarQuizData = grammarQuizData.map(item => {
+    if (!item.category) {
+        // Default category based on question type or content
+        if (item.q.includes('Synonym') || item.q.includes('Antonym')) {
+            item.category = 'Vocabulary';
+        } else if (item.q.includes('Error Spotting') || item.q.includes('Error')) {
+            item.category = 'Error Spotting';
+        } else if (item.q.includes('Idiom') || item.q.includes('Phrase')) {
+            item.category = 'Idioms & Phrases';
+        } else if (item.q.includes('One Word')) {
+            item.category = 'One Word Substitution';
+        } else if (item.q.includes('Spell') || item.q.includes('spelt')) {
+            item.category = 'Spelling';
+        } else if (item.q.includes('Rearrange')) {
+            item.category = 'Sentence Rearrangement';
+        } else if (item.q.includes('Passive') || item.q.includes('Voice') || item.q.includes('Active')) {
+            item.category = 'Voice Transformation';
+        } else if (item.q.includes('Direct') || item.q.includes('Indirect')) {
+            item.category = 'Direct/Indirect Speech';
+        } else if (item.type === 'text' && !item.q.includes('Passive')) {
+            item.category = 'Fill in the Blanks';
+        } else {
+            item.category = 'Grammar';
+        }
+    }
+    return item;
+});
 
 let score = 0;
 const totalScore = grammarQuizData.length;
@@ -1130,35 +1219,110 @@ function toggleAnswer(id) {
 }
 
 // Render Grammar Quiz
+let currentFilter = 'All';
+let filteredQuestions = [];
+
+// Define category order for sorting (Vocabulary first, then others)
+const categoryOrder = [
+    'Vocabulary',
+    'Error Spotting',
+    'Grammar',
+    'Idioms & Phrases',
+    'One Word Substitution',
+    'Spelling',
+    'Sentence Rearrangement',
+    'Voice Transformation',
+    'Direct/Indirect Speech',
+    'Fill in the Blanks'
+];
+
+function getCategoryOrder(category) {
+    const index = categoryOrder.indexOf(category);
+    return index === -1 ? 999 : index; // Put unknown categories at the end
+}
+
+function filterByCategory() {
+    const filterSelect = document.getElementById('category-filter');
+    currentFilter = filterSelect.value;
+    renderQuiz();
+}
+
 function renderQuiz() {
     const container = document.getElementById('quiz-list');
     container.innerHTML = '';
     
-    grammarQuizData.forEach((item, index) => {
+    // Create array with questions and their original indices
+    let questionsWithIndices = grammarQuizData.map((item, origIdx) => ({
+        item: item,
+        originalIndex: origIdx,
+        category: item.category || 'Grammar'
+    }));
+    
+    // Filter by category if needed
+    if (currentFilter !== 'All') {
+        questionsWithIndices = questionsWithIndices.filter(q => q.category === currentFilter);
+    } else {
+        // When showing all, sort by category order
+        questionsWithIndices.sort((a, b) => {
+            const orderA = getCategoryOrder(a.category);
+            const orderB = getCategoryOrder(b.category);
+            if (orderA !== orderB) {
+                return orderA - orderB;
+            }
+            // If same category, maintain original order
+            return a.originalIndex - b.originalIndex;
+        });
+    }
+    
+    filteredQuestions = questionsWithIndices.map(q => q.item);
+    
+    // Update filter count
+    const filterCount = document.getElementById('filter-count');
+    if (filterCount) {
+        filterCount.textContent = `(${filteredQuestions.length} questions)`;
+    }
+    
+    // Render questions
+    questionsWithIndices.forEach((qData, filteredIndex) => {
+        const item = qData.item;
+        const originalIndex = qData.originalIndex;
         const div = document.createElement('div');
         div.className = 'card quiz-item';
+        
+        // Add category header if showing all categories and this is the first question of a new category
+        let categoryHeader = '';
+        if (currentFilter === 'All' && filteredIndex === 0) {
+            categoryHeader = `<div class="category-header">${qData.category}</div>`;
+        } else if (currentFilter === 'All' && filteredIndex > 0) {
+            const prevCategory = questionsWithIndices[filteredIndex - 1].category;
+            if (prevCategory !== qData.category) {
+                categoryHeader = `<div class="category-header">${qData.category}</div>`;
+            }
+        }
         
         if (item.type === 'mcq') {
             let optionsHtml = '';
             item.options.forEach((opt, i) => {
-                optionsHtml += `<button class="opt-btn" onclick="checkMCQ(this, ${index}, ${i})">${opt}</button>`;
+                optionsHtml += `<button class="opt-btn" onclick="checkMCQ(this, ${originalIndex}, ${i})">${opt}</button>`;
             });
 
             div.innerHTML = `
-                <div class="quiz-q">${index + 1}. ${item.q}</div>
-                <div class="options-grid" id="q-${index}">
+                ${categoryHeader}
+                <div class="quiz-q">${filteredIndex + 1}. ${item.q}</div>
+                <div class="options-grid" id="q-${originalIndex}">
                     ${optionsHtml}
                 </div>
-                <div class="feedback" id="fb-${index}"></div>
+                <div class="feedback" id="fb-${originalIndex}"></div>
             `;
         } else if (item.type === 'text') {
             div.innerHTML = `
-                <div class="quiz-q">${index + 1}. ${item.q}</div>
+                ${categoryHeader}
+                <div class="quiz-q">${filteredIndex + 1}. ${item.q}</div>
                 <div class="input-quiz-container">
-                    <input type="text" class="input-quiz" id="in-${index}" placeholder="Type answer here...">
-                    <button class="check-btn" onclick="checkText(${index})">Check</button>
+                    <input type="text" class="input-quiz" id="in-${originalIndex}" placeholder="Type answer here...">
+                    <button class="check-btn" onclick="checkText(${originalIndex})">Check</button>
                 </div>
-                <div class="feedback" id="fb-${index}"></div>
+                <div class="feedback" id="fb-${originalIndex}"></div>
             `;
         }
         container.appendChild(div);
@@ -1166,6 +1330,9 @@ function renderQuiz() {
     
     // Load saved state after rendering
     loadState();
+    
+    // Update score display with filtered count
+    updateScore();
 }
 
 function showExplanation(qIndex, feedbackElement) {
@@ -1252,7 +1419,20 @@ function checkText(qIndex) {
 }
 
 function updateScore() {
-    document.getElementById('score-display').textContent = `Score: ${score} / ${grammarQuizData.length}`;
+    const totalQuestions = currentFilter === 'All' ? grammarQuizData.length : filteredQuestions.length;
+    // Calculate score for filtered questions
+    let filteredScore = 0;
+    if (currentFilter !== 'All') {
+        grammarQuizData.forEach((item, origIdx) => {
+            const category = item.category || 'Grammar';
+            if (category === currentFilter && quizState.answered[origIdx] && quizState.answered[origIdx].correct) {
+                filteredScore++;
+            }
+        });
+        document.getElementById('score-display').textContent = `Score: ${filteredScore} / ${totalQuestions} (Total: ${score} / ${grammarQuizData.length})`;
+    } else {
+        document.getElementById('score-display').textContent = `Score: ${score} / ${totalQuestions}`;
+    }
 }
 
 function resetQuiz() {
