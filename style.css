@@ -413,10 +413,37 @@ nav {
         grid-template-columns: 1fr;
     }
 
+    /* Clean Mobile Layout - Remove "Boxed" feel */
     .card {
-        padding: 1.5rem;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: 2rem;
+        border-radius: 0;
+    }
+
+    /* Add visual separation for distinct sections using whitespace/lines */
+    .card h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e5e7eb; /* Keep distinct header separator */
+    }
+
+    /* Quiz Items - subtle separation between questions */
+    .quiz-item {
+        background: #fff; /* Keep question items white for contrast if needed, or transparent */
+        background: transparent;
+        border-bottom: 1px solid #e5e7eb;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     
+    .quiz-item:last-child {
+        border-bottom: none;
+    }
+
     /* Adjust input quiz layout */
     .input-quiz-container {
         flex-direction: column;
