@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typist Exam Prep Suite</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <h1>Typist Exam Prep</h1>
+            <p class="subtitle">Essay • Comprehension • Grammar</p>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <button class="nav-btn active" onclick="switchTab('essay')">Essay</button>
+            <button class="nav-btn" onclick="switchTab('comprehension')">Comprehension</button>
+            <button class="nav-btn" onclick="switchTab('grammar')">Grammar & Quiz</button>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main id="content-area">
+            
+            <!-- Essay Section -->
+            <div id="essay" class="tab-content active">
+                <div class="card intro-card">
+                    <h2>📝 Essay Strategy Guide</h2>
+                    <p>For a 15-mark exam (~20 mins), structure is key.</p>
+                    <div class="strategy-grid">
+                        <div class="strategy-item">
+                            <h3>1. 4-Paragraph Skeleton</h3>
+                            <ul>
+                                <li><strong>Intro:</strong> Define Topic + Hook</li>
+                                <li><strong>Body 1:</strong> The Problem (SPELL Method)</li>
+                                <li><strong>Body 2:</strong> The Solution (Govt + Individual)</li>
+                                <li><strong>Conclusion:</strong> Summary + Positive Outlook</li>
+                            </ul>
+                        </div>
+                        <div class="strategy-item">
+                            <h3>2. SPELL Method</h3>
+                            <p>Stuck? Use these angles:</p>
+                            <div class="tags">
+                                <span class="tag">Social</span>
+                                <span class="tag">Political</span>
+                                <span class="tag">Economic</span>
+                                <span class="tag">Legal</span>
+                                <span class="tag">Land/Env</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Top 3 Rules</h2>
+                    <ol class="rules-list">
+                        <li><strong>Clarity > Vocabulary:</strong> Simple, correct English is better than confusing fancy words.</li>
+                        <li><strong>Handwriting:</strong> If they can't read it, they can't mark it.</li>
+                        <li><strong>Stay Neutral:</strong> Avoid extreme political opinions.</li>
+                    </ol>
+                </div>
+
+                <div class="card">
+                    <h2>📚 Model Essay</h2>
+                    <h3>Topic: Tourism in Meghalaya</h3>
+                    <div class="essay-content">
+                        <p><strong>Introduction:</strong> Meghalaya, known as the "Abode of Clouds," is one of the most picturesque states in India. With its rolling hills, cascading waterfalls, and unique living root bridges, it possesses immense potential to become a global tourism hub. However, realizing this potential requires balancing economic growth with ecological preservation.</p>
+                        <p><strong>Opportunities:</strong> The primary strength of Meghalaya lies in its natural beauty and unique culture. Destinations like Cherrapunji (Sohra), Mawlynnong, and Dawki attract thousands of visitors. This influx creates employment for local youth. Furthermore, "Eco-tourism" and "Adventure tourism" offer sustainable ways to monetize the landscape. The rich cultural heritage also offers scope for "Cultural tourism."</p>
+                        <p><strong>Challenges:</strong> Despite the potential, the sector faces hurdles. Infrastructure remains a bottleneck; road connectivity is often poor. Accommodation in peak seasons is inadequate. Moreover, unregulated tourism poses a threat to the fragile environment. Issues like littering and overcrowding need urgent attention.</p>
+                        <p><strong>Conclusion:</strong> To ensure that tourism remains a boon, the government and local communities must work together. Promoting sustainable practices and improving infrastructure can transform Meghalaya into a premier destination while preserving its pristine beauty.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>💡 Potential Topics</h2>
+                    <ul class="topic-list">
+                        <li>Unemployment in North East India</li>
+                        <li>The Impact of Social Media on Youth</li>
+                        <li>Climate Change: A Global Threat with Local Consequences</li>
+                        <li>Women Empowerment in Meghalaya Society</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Comprehension Section -->
+            <div id="comprehension" class="tab-content">
+                <div class="card passage-card">
+                    <h2>📖 Reading Passage</h2>
+                    <p class="meta">Estimated Time: 15 Minutes</p>
+                    <div class="passage-text">
+                        <p>The root bridges of Meghalaya are not built; they are grown. For centuries, the Khasi and Jaintia people have trained the aerial roots of the <em>Ficus elastica</em> (rubber fig tree) to span rivers and steep gorges. This bio-engineering marvel is a testament to human ingenuity and patience. Unlike modern concrete bridges that weaken with age and humidity, living root bridges grow stronger over time.</p>
+                        <p>The process takes 15 to 30 years. Local villagers use hollowed-out betel nut trunks to guide the young roots across the river. Once the roots reach the other side, they are allowed to take root in the soil. Over the years, these roots thicken and intertwine, creating a structure sturdy enough to hold up to 50 people at once. Some of these bridges are believed to be over 500 years old.</p>
+                        <p>However, these living heritage sites face threats today. The surge in tourism has led to increased footfall, which can stress the trees. Modern developmental projects also sometimes opt for quicker concrete solutions, neglecting this traditional knowledge. Preserving these bridges is not just about saving a structure; it is about keeping alive a unique harmonious relationship between man and nature.</p>
+                    </div>
+                </div>
+
+                <div class="card question-card">
+                    <h3>Questions</h3>
+                    <div id="comp-questions">
+                        <!-- Questions injected via JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grammar Section -->
+            <div id="grammar" class="tab-content">
+                <div class="card">
+                    <h2>⚡ Quick Reference Rules</h2>
+                    <div class="rules-grid">
+                        <div class="rule-box">
+                            <h4>S-V-O Order</h4>
+                            <p>Subject &rarr; Verb &rarr; Object</p>
+                            <p class="example">✅ I bought apples.<br>❌ Apples I bought.</p>
+                        </div>
+                        <div class="rule-box">
+                            <h4>SVOMPT (Long Sentences)</h4>
+                            <p>Subject-Verb-Object-Manner-Place-Time</p>
+                            <p class="example">He played football enthusiastically at the ground yesterday.</p>
+                        </div>
+                        <div class="rule-box">
+                            <h4>Active vs Passive</h4>
+                            <p><strong>Cmd:</strong> Open the door.<br><strong>Pass:</strong> Let the door be opened.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card quiz-container">
+                    <div class="quiz-header">
+                        <h2>🧠 Previous Years' Challenge</h2>
+                        <span id="score-display">Score: 0 / 0</span>
+                    </div>
+                    <div id="quiz-list">
+                        <!-- Quiz items injected via JS -->
+                    </div>
+                    <button id="reset-quiz" onclick="renderQuiz()">Reset Quiz</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
