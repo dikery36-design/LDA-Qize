@@ -532,58 +532,352 @@ const grammarQuizData = [
 
     // --- NEW QUESTIONS FROM QUESTION_2.MD (EXPANSION) ---
 
-    // Synonyms
-    { type: 'mcq', q: "Synonym of COMPASSION", options: ["Sympathy", "Destroy", "Yielding", "Difficult"], answer: 0, explanation: "<strong>Compassion</strong> means sympathetic pity and concern for the sufferings of others.<br>• <strong>Sympathy</strong> (Correct): Feelings of pity/sorrow.<br>• <em>Yielding</em>: Giving way." },
-    { type: 'mcq', q: "Synonym of CALAMITY", options: ["Tiny", "Disaster", "Prodigal", "Appeal"], answer: 1, explanation: "<strong>Calamity</strong> means an event causing great and often sudden damage or distress.<br>• <strong>Disaster</strong> (Correct): A sudden accident or catastrophe." },
-    { type: 'mcq', q: "Synonym of DISPUTE", options: ["Detestable", "Phony", "Conflict", "Disaster"], answer: 2, explanation: "<strong>Dispute</strong> means a disagreement, argument, or debate.<br>• <strong>Conflict</strong> (Correct): A serious disagreement." },
-    { type: 'mcq', q: "Synonym of DERIVE", options: ["Prodigal", "Spotless", "Obtain", "Dictum"], answer: 2, explanation: "<strong>Derive</strong> means to obtain something from a specified source.<br>• <strong>Obtain</strong> (Correct): To get, acquire, or secure." },
-    { type: 'mcq', q: "Synonym of SUSTAIN", options: ["Calming", "Endeavour", "Preserve", "Truthfulness"], answer: 2, explanation: "<strong>Sustain</strong> means to strengthen or support physically or mentally.<br>• <strong>Preserve</strong> (Correct): To maintain something in its original or existing state." },
-    { type: 'mcq', q: "Synonym of GRASP", options: ["Faithful", "Initiate", "Clasp", "Disaster"], answer: 2, explanation: "<strong>Grasp</strong> means to seize and hold firmly.<br>• <strong>Clasp</strong> (Correct): To grasp (something) tightly with one's hand." },
-    { type: 'mcq', q: "Synonym of ORIGINATE", options: ["Sympathy", "Spendthrift", "Initiate", "Clasp"], answer: 2, explanation: "<strong>Originate</strong> means to have a specified beginning.<br>• <strong>Initiate</strong> (Correct): To cause a process or action to begin." },
-    { type: 'mcq', q: "Synonym of RUPTURE", options: ["Spotless", "Injurious", "Prodigal", "Break"], answer: 3, explanation: "<strong>Rupture</strong> means to break or burst suddenly.<br>• <strong>Break</strong> (Correct): To separate into pieces." },
-    { type: 'mcq', q: "Synonym of RAZE", options: ["Unpolished", "Destroy", "Yielding", "Sympathy"], answer: 1, explanation: "<strong>Raze</strong> means to completely destroy (a building, town, or other site).<br>• <strong>Destroy</strong> (Correct): To end the existence of something." },
-    { type: 'mcq', q: "Synonym of GASH", options: ["Censured", "Cut", "Endeavour", "Difficult"], answer: 1, explanation: "<strong>Gash</strong> means a long, deep cut or wound.<br>• <strong>Cut</strong> (Correct): An incision/wound." },
-    { type: 'mcq', q: "Synonym of PLUNGE", options: ["Fall", "Spotless", "Conflict", "Endeavour"], answer: 0, explanation: "<strong>Plunge</strong> means to jump or dive quickly.<br>• <strong>Fall</strong> (Correct): To drop or descend." },
-    { type: 'mcq', q: "Synonym of MICROSCOPIC", options: ["Tiny", "Preserve", "Disaster", "Prodigal"], answer: 0, explanation: "<strong>Microscopic</strong> means so small as to be visible only with a microscope.<br>• <strong>Tiny</strong> (Correct): Very small." },
-    { type: 'mcq', q: "Synonym of ATTEMPT", options: ["Censured", "Calming", "Endeavour", "Clasp"], answer: 2, explanation: "<strong>Attempt</strong> means to make an effort to achieve something.<br>• <strong>Endeavour</strong> (Correct): Try hard to do or achieve something." },
-    { type: 'mcq', q: "Synonym of DEVOUT", options: ["Truthfulness", "Appeal", "Obtain", "Faithful"], answer: 3, explanation: "<strong>Devout</strong> means having or showing deep religious feeling or commitment.<br>• <strong>Faithful</strong> (Correct): Loyal, constant, and steadfast." },
-    { type: 'mcq', q: "Synonym of PRODIGAL", options: ["Spendthrift", "Destroy", "Initiate", "Preserve"], answer: 0, explanation: "<strong>Prodigal</strong> means spending money or resources freely and recklessly.<br>• <strong>Spendthrift</strong> (Correct): A person who spends money in an irresponsible way." },
-    { type: 'mcq', q: "Synonym of CAUTION", options: ["Unnatural", "Warn", "Spendthrift", "Conflict"], answer: 1, explanation: "<strong>Caution</strong> means care taken to avoid danger or mistakes.<br>• <strong>Warn</strong> (Correct): To inform someone in advance of an impending or possible danger." },
-    { type: 'mcq', q: "Synonym of IMPLORE", options: ["Disaster", "Appeal", "Preserve", "Spendthrift"], answer: 1, explanation: "<strong>Implore</strong> means to beg someone earnestly or desperately to do something.<br>• <strong>Appeal</strong> (Correct): Make a serious or urgent request." },
+    // Synonyms (Updated with full explanations)
+    { 
+        type: 'mcq', 
+        q: "Synonym of COMPASSION", 
+        options: ["Sympathy", "Destroy", "Yielding", "Difficult"], 
+        answer: 0, 
+        explanation: "<strong>Compassion</strong> means sympathetic pity and concern for the sufferings of others.<br>• <strong>Sympathy</strong> (Correct): Feelings of pity and sorrow for someone else's misfortune.<br>• <em>Destroy</em>: To end the existence of something.<br>• <em>Yielding</em>: Giving way to arguments or pressure.<br>• <em>Difficult</em>: Needing much effort or skill." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of CALAMITY", 
+        options: ["Tiny", "Disaster", "Prodigal", "Appeal"], 
+        answer: 1, 
+        explanation: "<strong>Calamity</strong> means an event causing great and often sudden damage or distress.<br>• <strong>Disaster</strong> (Correct): A sudden accident or natural catastrophe.<br>• <em>Tiny</em>: Very small.<br>• <em>Prodigal</em>: Spending money freely and recklessly.<br>• <em>Appeal</em>: Make a serious or urgent request." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of DISPUTE", 
+        options: ["Detestable", "Phony", "Conflict", "Disaster"], 
+        answer: 2, 
+        explanation: "<strong>Dispute</strong> means a disagreement, argument, or debate.<br>• <strong>Conflict</strong> (Correct): A serious disagreement or argument.<br>• <em>Detestable</em>: Deserving intense dislike.<br>• <em>Phony</em>: Not genuine; fake.<br>• <em>Disaster</em>: A sudden event causing great damage." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of DERIVE", 
+        options: ["Prodigal", "Spotless", "Obtain", "Dictum"], 
+        answer: 2, 
+        explanation: "<strong>Derive</strong> means to obtain something from a specified source.<br>• <strong>Obtain</strong> (Correct): To get, acquire, or secure.<br>• <em>Prodigal</em>: Wasteful.<br>• <em>Spotless</em>: Absolutely clean.<br>• <em>Dictum</em>: A formal pronouncement." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of SUSTAIN", 
+        options: ["Calming", "Endeavour", "Preserve", "Truthfulness"], 
+        answer: 2, 
+        explanation: "<strong>Sustain</strong> means to strengthen or support physically or mentally.<br>• <strong>Preserve</strong> (Correct): To maintain something in its original or existing state.<br>• <em>Calming</em>: Soothing.<br>• <em>Endeavour</em>: Try hard to do or achieve something.<br>• <em>Truthfulness</em>: The fact of being true." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of GRASP", 
+        options: ["Faithful", "Initiate", "Clasp", "Disaster"], 
+        answer: 2, 
+        explanation: "<strong>Grasp</strong> means to seize and hold firmly.<br>• <strong>Clasp</strong> (Correct): To grasp (something) tightly with one's hand.<br>• <em>Faithful</em>: Loyal and steadfast.<br>• <em>Initiate</em>: To cause a process to begin.<br>• <em>Disaster</em>: A sudden accident." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of ORIGINATE", 
+        options: ["Sympathy", "Spendthrift", "Initiate", "Clasp"], 
+        answer: 2, 
+        explanation: "<strong>Originate</strong> means to have a specified beginning.<br>• <strong>Initiate</strong> (Correct): To cause a process or action to begin.<br>• <em>Sympathy</em>: Feelings of pity.<br>• <em>Spendthrift</em>: A person who spends money irresponsibly.<br>• <em>Clasp</em>: Grasp tightly." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of RUPTURE", 
+        options: ["Spotless", "Injurious", "Prodigal", "Break"], 
+        answer: 3, 
+        explanation: "<strong>Rupture</strong> means to break or burst suddenly.<br>• <strong>Break</strong> (Correct): To separate or cause to separate into pieces.<br>• <em>Spotless</em>: Clean.<br>• <em>Injurious</em>: Causing harm.<br>• <em>Prodigal</em>: Wasteful." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of RAZE", 
+        options: ["Unpolished", "Destroy", "Yielding", "Sympathy"], 
+        answer: 1, 
+        explanation: "<strong>Raze</strong> means to completely destroy (a building, town, or other site).<br>• <strong>Destroy</strong> (Correct): To put an end to the existence of something.<br>• <em>Unpolished</em>: Lacking sophistication.<br>• <em>Yielding</em>: Compliant.<br>• <em>Sympathy</em>: Compassion." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of GASH", 
+        options: ["Censured", "Cut", "Endeavour", "Difficult"], 
+        answer: 1, 
+        explanation: "<strong>Gash</strong> means a long, deep cut or wound.<br>• <strong>Cut</strong> (Correct): An incision or wound.<br>• <em>Censured</em>: Expressed severe disapproval.<br>• <em>Endeavour</em>: Attempt.<br>• <em>Difficult</em>: Hard to do." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of PLUNGE", 
+        options: ["Fall", "Spotless", "Conflict", "Endeavour"], 
+        answer: 0, 
+        explanation: "<strong>Plunge</strong> means to jump or dive quickly.<br>• <strong>Fall</strong> (Correct): To drop or descend.<br>• <em>Spotless</em>: Clean.<br>• <em>Conflict</em>: A disagreement.<br>• <em>Endeavour</em>: An attempt." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of MICROSCOPIC", 
+        options: ["Tiny", "Preserve", "Disaster", "Prodigal"], 
+        answer: 0, 
+        explanation: "<strong>Microscopic</strong> means so small as to be visible only with a microscope.<br>• <strong>Tiny</strong> (Correct): Very small.<br>• <em>Preserve</em>: To maintain.<br>• <em>Disaster</em>: A catastrophe.<br>• <em>Prodigal</em>: Wasteful." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of ATTEMPT", 
+        options: ["Censured", "Calming", "Endeavour", "Clasp"], 
+        answer: 2, 
+        explanation: "<strong>Attempt</strong> means to make an effort to achieve something.<br>• <strong>Endeavour</strong> (Correct): Try hard to do or achieve something.<br>• <em>Censured</em>: Reprimanded.<br>• <em>Calming</em>: Soothing.<br>• <em>Clasp</em>: Hold tightly." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of DEVOUT", 
+        options: ["Truthfulness", "Appeal", "Obtain", "Faithful"], 
+        answer: 3, 
+        explanation: "<strong>Devout</strong> means having or showing deep religious feeling or commitment.<br>• <strong>Faithful</strong> (Correct): Loyal, constant, and steadfast.<br>• <em>Truthfulness</em>: Honesty.<br>• <em>Appeal</em>: Request.<br>• <em>Obtain</em>: Get." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of PRODIGAL", 
+        options: ["Spendthrift", "Destroy", "Initiate", "Preserve"], 
+        answer: 0, 
+        explanation: "<strong>Prodigal</strong> means spending money or resources freely and recklessly.<br>• <strong>Spendthrift</strong> (Correct): A person who spends money in an irresponsible way.<br>• <em>Destroy</em>: Demolish.<br>• <em>Initiate</em>: Start.<br>• <em>Preserve</em>: Keep safe." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of CAUTION", 
+        options: ["Unnatural", "Warn", "Spendthrift", "Conflict"], 
+        answer: 1, 
+        explanation: "<strong>Caution</strong> means care taken to avoid danger or mistakes.<br>• <strong>Warn</strong> (Correct): To inform someone in advance of an impending or possible danger.<br>• <em>Unnatural</em>: Abnormal.<br>• <em>Spendthrift</em>: Waster of money.<br>• <em>Conflict</em>: Dispute." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Synonym of IMPLORE", 
+        options: ["Disaster", "Appeal", "Preserve", "Spendthrift"], 
+        answer: 1, 
+        explanation: "<strong>Implore</strong> means to beg someone earnestly or desperately to do something.<br>• <strong>Appeal</strong> (Correct): Make a serious or urgent request.<br>• <em>Disaster</em>: Calamity.<br>• <em>Preserve</em>: Protect.<br>• <em>Spendthrift</em>: Waster." 
+    },
 
-    // Antonyms
-    { type: 'mcq', q: "Antonym of EXPLICIT", options: ["unreserved", "plain", "absolute", "uncertain"], answer: 3, explanation: "<strong>Explicit</strong> means stated clearly and in detail, leaving no room for confusion.<br>• <strong>Uncertain</strong> (Correct): Not able to be relied on; not known or definite." },
-    { type: 'mcq', q: "Antonym of CLANDESTINE", options: ["unrevealed", "undisclosed", "unconcealed", "underhand"], answer: 2, explanation: "<strong>Clandestine</strong> means kept secret or done secretly.<br>• <strong>Unconcealed</strong> (Correct): Not hidden; obvious." },
-    { type: 'mcq', q: "Antonym of CHRONIC", options: ["Freedom", "Infrequent", "Solution", "Optional"], answer: 1, explanation: "<strong>Chronic</strong> means persisting for a long time or constantly recurring.<br>• <strong>Infrequent</strong> (Correct): Not occurring often." },
-    { type: 'mcq', q: "Antonym of PERIL", options: ["Core", "Kindle", "Unused", "Security"], answer: 3, explanation: "<strong>Peril</strong> means serious and immediate danger.<br>• <strong>Security</strong> (Correct): The state of being free from danger or threat." },
-    { type: 'mcq', q: "Antonym of PERIPHERY", options: ["Avoidable", "Solution", "Unconcealed", "Core"], answer: 3, explanation: "<strong>Periphery</strong> means the outer limits or edge of an area or object.<br>• <strong>Core</strong> (Correct): The central or most important part." },
-    { type: 'mcq', q: "Antonym of EXTINGUISH", options: ["Kindle", "Valueless", "Insult", "Approve"], answer: 0, explanation: "<strong>Extinguish</strong> means to cause a fire to cease to burn.<br>• <strong>Kindle</strong> (Correct): To light or set on fire." },
-    { type: 'mcq', q: "Antonym of FLEXIBLE", options: ["Avoidable", "Unpredictable", "Rigid", "Released"], answer: 2, explanation: "<strong>Flexible</strong> means capable of bending easily without breaking.<br>• <strong>Rigid</strong> (Correct): Unable to bend or be forced out of shape." },
-    { type: 'mcq', q: "Antonym of COMPLIMENT", options: ["Attic", "Harmony", "Consistent", "Insult"], answer: 3, explanation: "<strong>Compliment</strong> means a polite expression of praise or admiration.<br>• <strong>Insult</strong> (Correct): A disrespectful or scornfully abusive remark." },
-    { type: 'mcq', q: "Antonym of CONDEMN", options: ["Terminated", "Crazy", "Approve", "Core"], answer: 2, explanation: "<strong>Condemn</strong> means to express complete disapproval of.<br>• <strong>Approve</strong> (Correct): To believe that someone or something is good or acceptable." },
-    { type: 'mcq', q: "Antonym of ADULTERATION", options: ["Figurative", "Purification", "Honesty", "Dependent"], answer: 1, explanation: "<strong>Adulteration</strong> means the action of making something poorer in quality by adding another substance.<br>• <strong>Purification</strong> (Correct): The removal of contaminants from something." },
-    { type: 'mcq', q: "Antonym of EMANCIPATE", options: ["Love", "Bright", "Enslave", "Genuine"], answer: 2, explanation: "<strong>Emancipate</strong> means to set free, especially from legal, social, or political restrictions.<br>• <strong>Enslave</strong> (Correct): To make someone a slave." },
-    { type: 'mcq', q: "Antonym of AMALGAMATE", options: ["Insolence", "Genuine", "Solution", "Isolate"], answer: 3, explanation: "<strong>Amalgamate</strong> means to combine or unite to form one organization or structure.<br>• <strong>Isolate</strong> (Correct): To cause a person or place to be or remain alone or apart from others." },
-    { type: 'mcq', q: "Antonym of COMPLACENCY", options: ["Dissatisfaction", "Security", "Hostile", "Freedom"], answer: 0, explanation: "<strong>Complacency</strong> means a feeling of smug or uncritical satisfaction with oneself.<br>• <strong>Dissatisfaction</strong> (Correct): Lack of satisfaction." },
-    { type: 'mcq', q: "Antonym of ERRATIC", options: ["Solution", "Genuine", "Attic", "Consistent"], answer: 3, explanation: "<strong>Erratic</strong> means not even or regular in pattern or movement; unpredictable.<br>• <strong>Consistent</strong> (Correct): Acting or done in the same way over time." },
-    { type: 'mcq', q: "Antonym of BANE", options: ["Infrequent", "Insolence", "Benevolence", "Security"], answer: 2, explanation: "<strong>Bane</strong> means a cause of great distress or annoyance.<br>• <strong>Benevolence</strong> (Correct): The quality of being well meaning; kindness." },
-    { type: 'mcq', q: "Antonym of CELLAR", options: ["Infrequent", "Genuine", "Attic", "Dependent"], answer: 2, explanation: "<strong>Cellar</strong> is a room below ground level.<br>• <strong>Attic</strong> (Correct): A space or room just below the roof of a building." },
-    { type: 'mcq', q: "Antonym of BOYCOTT", options: ["Patronize", "Terminated", "Jubilant", "Infrequent"], answer: 0, explanation: "<strong>Boycott</strong> means to withdraw from commercial or social relations.<br>• <strong>Patronize</strong> (Correct): To frequent (a store, theatre, etc.) as a customer." },
-    { type: 'mcq', q: "Antonym of AUTONOMOUS", options: ["Jubilant", "Avoidable", "Terminated", "Dependent"], answer: 3, explanation: "<strong>Autonomous</strong> means having the freedom to act independently.<br>• <strong>Dependent</strong> (Correct): Contingent on or determined by." },
-    { type: 'mcq', q: "Antonym of COGNIZANCE", options: ["Figurative", "Love", "Enslave", "Ignorance"], answer: 3, explanation: "<strong>Cognizance</strong> means knowledge, awareness, or notice.<br>• <strong>Ignorance</strong> (Correct): Lack of knowledge or information." },
-    { type: 'mcq', q: "Antonym of PRETENCE", options: ["Unconcealed", "Artificial", "Insolence", "Honesty"], answer: 3, explanation: "<strong>Pretence</strong> means an attempt to make something that is not the case appear true.<br>• <strong>Honesty</strong> (Correct): The quality of being honest." },
-    { type: 'mcq', q: "Antonym of HUMOUR", options: ["Core", "Love", "Purification", "Seriousness"], answer: 3, explanation: "<strong>Humour</strong> is the quality of being amusing or comic.<br>• <strong>Seriousness</strong> (Correct): The state of being serious." },
-    { type: 'mcq', q: "Antonym of SUPPRESS", options: ["Encourage", "Rigid", "Freedom", "Hostile"], answer: 0, explanation: "<strong>Suppress</strong> means to forcibly put an end to.<br>• <strong>Encourage</strong> (Correct): To give support, confidence, or hope to." },
-    { type: 'mcq', q: "Antonym of INEVITABLE", options: ["Love", "Terminated", "Honesty", "Avoidable"], answer: 3, explanation: "<strong>Inevitable</strong> means certain to happen; unavoidable.<br>• <strong>Avoidable</strong> (Correct): Able to be avoided or prevented." },
-    { type: 'mcq', q: "Antonym of STRIFE", options: ["Harmony", "Optional", "Clumsiness", "Terminated"], answer: 0, explanation: "<strong>Strife</strong> means angry or bitter disagreement over fundamental issues.<br>• <strong>Harmony</strong> (Correct): Agreement or concord." },
-    { type: 'mcq', q: "Antonym of COMMISSIONED", options: ["Benevolence", "Hostile", "Ignorance", "Terminated"], answer: 3, explanation: "<strong>Commissioned</strong> means ordered or authorized; in service.<br>• <strong>Terminated</strong> (Correct): Brought to an end." },
-    { type: 'mcq', q: "Antonym of DESPISE", options: ["Dependent", "Optional", "Love", "Artificial"], answer: 2, explanation: "<strong>Despise</strong> means to feel contempt or a deep repugnance for.<br>• <strong>Love</strong> (Correct): An intense feeling of deep affection." },
-    { type: 'mcq', q: "Antonym of PROMINENT", options: ["Inconspicuous", "Crazy", "Solution", "Terminated"], answer: 0, explanation: "<strong>Prominent</strong> means important; famous; noticeable.<br>• <strong>Inconspicuous</strong> (Correct): Not clearly visible or attracting attention." },
-    { type: 'mcq', q: "Antonym of SANE", options: ["Freedom", "Crazy", "Genuine", "Foreign"], answer: 1, explanation: "<strong>Sane</strong> means of sound mind; not mad.<br>• <strong>Crazy</strong> (Correct): Mad, especially as manifested in wild or aggressive behavior." },
-    { type: 'mcq', q: "Antonym of VALUABLE", options: ["Valueless", "Avoidable", "Rigid", "Consistent"], answer: 0, explanation: "<strong>Valuable</strong> means worth a great deal of money.<br>• <strong>Valueless</strong> (Correct): Having no value." },
-    { type: 'mcq', q: "Antonym of UTILISED", options: ["Crazy", "Unused", "Seriousness", "Honesty"], answer: 1, explanation: "<strong>Utilised</strong> means make practical and effective use of.<br>• <strong>Unused</strong> (Correct): Not used." },
-    { type: 'mcq', q: "Antonym of PROBLEM", options: ["Solution", "Honesty", "Genuine", "Jubilant"], answer: 0, explanation: "<strong>Problem</strong> is a matter or situation regarded as unwelcome or harmful.<br>• <strong>Solution</strong> (Correct): A means of solving a problem." },
-    { type: 'mcq', q: "Antonym of PREDICTABLE", options: ["Kindle", "Unused", "Turbulent", "Unpredictable"], answer: 3, explanation: "<strong>Predictable</strong> means able to be predicted.<br>• <strong>Unpredictable</strong> (Correct): Not able to be predicted." },
+    // Antonyms (Updated with full explanations)
+    { 
+        type: 'mcq', 
+        q: "Antonym of EXPLICIT", 
+        options: ["unreserved", "plain", "absolute", "uncertain"], 
+        answer: 3, 
+        explanation: "<strong>Explicit</strong> means stated clearly and in detail.<br>• <strong>Uncertain</strong> (Correct): Not able to be relied on; not known or definite.<br>• <em>Unreserved</em>: Frank and open.<br>• <em>Plain</em>: Simple or clear.<br>• <em>Absolute</em>: Total; complete." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of CLANDESTINE", 
+        options: ["unrevealed", "undisclosed", "unconcealed", "underhand"], 
+        answer: 2, 
+        explanation: "<strong>Clandestine</strong> means kept secret or done secretly.<br>• <strong>Unconcealed</strong> (Correct): Not hidden; obvious.<br>• <em>Unrevealed</em>: Not made known.<br>• <em>Undisclosed</em>: Not made known.<br>• <em>Underhand</em>: Dishonest." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of CHRONIC", 
+        options: ["Freedom", "Infrequent", "Solution", "Optional"], 
+        answer: 1, 
+        explanation: "<strong>Chronic</strong> means persisting for a long time or constantly recurring.<br>• <strong>Infrequent</strong> (Correct): Not occurring often.<br>• <em>Freedom</em>: Liberty.<br>• <em>Solution</em>: Answer to a problem.<br>• <em>Optional</em>: Not compulsory." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of PERIL", 
+        options: ["Core", "Kindle", "Unused", "Security"], 
+        answer: 3, 
+        explanation: "<strong>Peril</strong> means serious and immediate danger.<br>• <strong>Security</strong> (Correct): The state of being free from danger or threat.<br>• <em>Core</em>: Center.<br>• <em>Kindle</em>: Ignite.<br>• <em>Unused</em>: Not utilized." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of PERIPHERY", 
+        options: ["Avoidable", "Solution", "Unconcealed", "Core"], 
+        answer: 3, 
+        explanation: "<strong>Periphery</strong> means the outer limits or edge of an area or object.<br>• <strong>Core</strong> (Correct): The central or most important part.<br>• <em>Avoidable</em>: Preventable.<br>• <em>Solution</em>: Answer.<br>• <em>Unconcealed</em>: Visible." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of EXTINGUISH", 
+        options: ["Kindle", "Valueless", "Insult", "Approve"], 
+        answer: 0, 
+        explanation: "<strong>Extinguish</strong> means to cause a fire to cease to burn.<br>• <strong>Kindle</strong> (Correct): To light or set on fire.<br>• <em>Valueless</em>: Worthless.<br>• <em>Insult</em>: Offend.<br>• <em>Approve</em>: Accept." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of FLEXIBLE", 
+        options: ["Avoidable", "Unpredictable", "Rigid", "Released"], 
+        answer: 2, 
+        explanation: "<strong>Flexible</strong> means capable of bending easily without breaking.<br>• <strong>Rigid</strong> (Correct): Unable to bend or be forced out of shape.<br>• <em>Avoidable</em>: Can be prevented.<br>• <em>Unpredictable</em>: Random.<br>• <em>Released</em>: Freed." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of COMPLIMENT", 
+        options: ["Attic", "Harmony", "Consistent", "Insult"], 
+        answer: 3, 
+        explanation: "<strong>Compliment</strong> means a polite expression of praise or admiration.<br>• <strong>Insult</strong> (Correct): A disrespectful or scornfully abusive remark.<br>• <em>Attic</em>: Room under the roof.<br>• <em>Harmony</em>: Agreement.<br>• <em>Consistent</em>: Steady." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of CONDEMN", 
+        options: ["Terminated", "Crazy", "Approve", "Core"], 
+        answer: 2, 
+        explanation: "<strong>Condemn</strong> means to express complete disapproval of.<br>• <strong>Approve</strong> (Correct): To believe that someone or something is good or acceptable.<br>• <em>Terminated</em>: Ended.<br>• <em>Crazy</em>: Mad.<br>• <em>Core</em>: Center." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of ADULTERATION", 
+        options: ["Figurative", "Purification", "Honesty", "Dependent"], 
+        answer: 1, 
+        explanation: "<strong>Adulteration</strong> means the action of making something poorer in quality by adding another substance.<br>• <strong>Purification</strong> (Correct): The removal of contaminants from something.<br>• <em>Figurative</em>: Metaphorical.<br>• <em>Honesty</em>: Truthfulness.<br>• <em>Dependent</em>: Reliant." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of EMANCIPATE", 
+        options: ["Love", "Bright", "Enslave", "Genuine"], 
+        answer: 2, 
+        explanation: "<strong>Emancipate</strong> means to set free, especially from legal, social, or political restrictions.<br>• <strong>Enslave</strong> (Correct): To make someone a slave.<br>• <em>Love</em>: Affection.<br>• <em>Bright</em>: Shining.<br>• <em>Genuine</em>: Real." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of AMALGAMATE", 
+        options: ["Insolence", "Genuine", "Solution", "Isolate"], 
+        answer: 3, 
+        explanation: "<strong>Amalgamate</strong> means to combine or unite to form one organization or structure.<br>• <strong>Isolate</strong> (Correct): To cause a person or place to be or remain alone or apart from others.<br>• <em>Insolence</em>: Rudeness.<br>• <em>Genuine</em>: Authentic.<br>• <em>Solution</em>: Answer." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of COMPLACENCY", 
+        options: ["Dissatisfaction", "Security", "Hostile", "Freedom"], 
+        answer: 0, 
+        explanation: "<strong>Complacency</strong> means a feeling of smug or uncritical satisfaction with oneself.<br>• <strong>Dissatisfaction</strong> (Correct): Lack of satisfaction.<br>• <em>Security</em>: Safety.<br>• <em>Hostile</em>: Unfriendly.<br>• <em>Freedom</em>: Liberty." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of ERRATIC", 
+        options: ["Solution", "Genuine", "Attic", "Consistent"], 
+        answer: 3, 
+        explanation: "<strong>Erratic</strong> means not even or regular in pattern or movement; unpredictable.<br>• <strong>Consistent</strong> (Correct): Acting or done in the same way over time.<br>• <em>Solution</em>: Fix.<br>• <em>Genuine</em>: Real.<br>• <em>Attic</em>: Top room." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of BANE", 
+        options: ["Infrequent", "Insolence", "Benevolence", "Security"], 
+        answer: 2, 
+        explanation: "<strong>Bane</strong> means a cause of great distress or annoyance.<br>• <strong>Benevolence</strong> (Correct): The quality of being well meaning; kindness.<br>• <em>Infrequent</em>: Rare.<br>• <em>Insolence</em>: Disrespect.<br>• <em>Security</em>: Safety." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of CELLAR", 
+        options: ["Infrequent", "Genuine", "Attic", "Dependent"], 
+        answer: 2, 
+        explanation: "<strong>Cellar</strong> is a room below ground level.<br>• <strong>Attic</strong> (Correct): A space or room just below the roof of a building.<br>• <em>Infrequent</em>: Rare.<br>• <em>Genuine</em>: Real.<br>• <em>Dependent</em>: Reliant." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of BOYCOTT", 
+        options: ["Patronize", "Terminated", "Jubilant", "Infrequent"], 
+        answer: 0, 
+        explanation: "<strong>Boycott</strong> means to withdraw from commercial or social relations.<br>• <strong>Patronize</strong> (Correct): To frequent (a store, theatre, etc.) as a customer.<br>• <em>Terminated</em>: Ended.<br>• <em>Jubilant</em>: Happy.<br>• <em>Infrequent</em>: Rare." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of AUTONOMOUS", 
+        options: ["Jubilant", "Avoidable", "Terminated", "Dependent"], 
+        answer: 3, 
+        explanation: "<strong>Autonomous</strong> means having the freedom to act independently.<br>• <strong>Dependent</strong> (Correct): Contingent on or determined by.<br>• <em>Jubilant</em>: Happy.<br>• <em>Avoidable</em>: Preventable.<br>• <em>Terminated</em>: Ended." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of COGNIZANCE", 
+        options: ["Figurative", "Love", "Enslave", "Ignorance"], 
+        answer: 3, 
+        explanation: "<strong>Cognizance</strong> means knowledge, awareness, or notice.<br>• <strong>Ignorance</strong> (Correct): Lack of knowledge or information.<br>• <em>Figurative</em>: Metaphorical.<br>• <em>Love</em>: Affection.<br>• <em>Enslave</em>: To capture." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of PRETENCE", 
+        options: ["Unconcealed", "Artificial", "Insolence", "Honesty"], 
+        answer: 3, 
+        explanation: "<strong>Pretence</strong> means an attempt to make something that is not the case appear true.<br>• <strong>Honesty</strong> (Correct): The quality of being honest.<br>• <em>Unconcealed</em>: Visible.<br>• <em>Artificial</em>: Fake.<br>• <em>Insolence</em>: Rudeness." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of HUMOUR", 
+        options: ["Core", "Love", "Purification", "Seriousness"], 
+        answer: 3, 
+        explanation: "<strong>Humour</strong> is the quality of being amusing or comic.<br>• <strong>Seriousness</strong> (Correct): The state of being serious.<br>• <em>Core</em>: Center.<br>• <em>Love</em>: Affection.<br>• <em>Purification</em>: Cleansing." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of SUPPRESS", 
+        options: ["Encourage", "Rigid", "Freedom", "Hostile"], 
+        answer: 0, 
+        explanation: "<strong>Suppress</strong> means to forcibly put an end to.<br>• <strong>Encourage</strong> (Correct): To give support, confidence, or hope to.<br>• <em>Rigid</em>: Stiff.<br>• <em>Freedom</em>: Liberty.<br>• <em>Hostile</em>: Unfriendly." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of INEVITABLE", 
+        options: ["Love", "Terminated", "Honesty", "Avoidable"], 
+        answer: 3, 
+        explanation: "<strong>Inevitable</strong> means certain to happen; unavoidable.<br>• <strong>Avoidable</strong> (Correct): Able to be avoided or prevented.<br>• <em>Love</em>: Affection.<br>• <em>Terminated</em>: Ended.<br>• <em>Honesty</em>: Truth." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of STRIFE", 
+        options: ["Harmony", "Optional", "Clumsiness", "Terminated"], 
+        answer: 0, 
+        explanation: "<strong>Strife</strong> means angry or bitter disagreement over fundamental issues.<br>• <strong>Harmony</strong> (Correct): Agreement or concord.<br>• <em>Optional</em>: Not required.<br>• <em>Clumsiness</em>: Awkwardness.<br>• <em>Terminated</em>: Ended." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of COMMISSIONED", 
+        options: ["Benevolence", "Hostile", "Ignorance", "Terminated"], 
+        answer: 3, 
+        explanation: "<strong>Commissioned</strong> means ordered or authorized; in service.<br>• <strong>Terminated</strong> (Correct): Brought to an end; fired.<br>• <em>Benevolence</em>: Kindness.<br>• <em>Hostile</em>: Unfriendly.<br>• <em>Ignorance</em>: Lack of knowledge." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of DESPISE", 
+        options: ["Dependent", "Optional", "Love", "Artificial"], 
+        answer: 2, 
+        explanation: "<strong>Despise</strong> means to feel contempt or a deep repugnance for.<br>• <strong>Love</strong> (Correct): An intense feeling of deep affection.<br>• <em>Dependent</em>: Reliant.<br>• <em>Optional</em>: Choice.<br>• <em>Artificial</em>: Fake." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of PROMINENT", 
+        options: ["Inconspicuous", "Crazy", "Solution", "Terminated"], 
+        answer: 0, 
+        explanation: "<strong>Prominent</strong> means important; famous; noticeable.<br>• <strong>Inconspicuous</strong> (Correct): Not clearly visible or attracting attention.<br>• <em>Crazy</em>: Mad.<br>• <em>Solution</em>: Answer.<br>• <em>Terminated</em>: Ended." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of SANE", 
+        options: ["Freedom", "Crazy", "Genuine", "Foreign"], 
+        answer: 1, 
+        explanation: "<strong>Sane</strong> means of sound mind; not mad.<br>• <strong>Crazy</strong> (Correct): Mad, especially as manifested in wild or aggressive behavior.<br>• <em>Freedom</em>: Liberty.<br>• <em>Genuine</em>: Real.<br>• <em>Foreign</em>: Alien." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of VALUABLE", 
+        options: ["Valueless", "Avoidable", "Rigid", "Consistent"], 
+        answer: 0, 
+        explanation: "<strong>Valuable</strong> means worth a great deal of money.<br>• <strong>Valueless</strong> (Correct): Having no value.<br>• <em>Avoidable</em>: Preventable.<br>• <em>Rigid</em>: Stiff.<br>• <em>Consistent</em>: Steady." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of UTILISED", 
+        options: ["Crazy", "Unused", "Seriousness", "Honesty"], 
+        answer: 1, 
+        explanation: "<strong>Utilised</strong> means make practical and effective use of.<br>• <strong>Unused</strong> (Correct): Not used.<br>• <em>Crazy</em>: Mad.<br>• <em>Seriousness</em>: Gravity.<br>• <em>Honesty</em>: Truth." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of PROBLEM", 
+        options: ["Solution", "Honesty", "Genuine", "Jubilant"], 
+        answer: 0, 
+        explanation: "<strong>Problem</strong> is a matter or situation regarded as unwelcome or harmful.<br>• <strong>Solution</strong> (Correct): A means of solving a problem.<br>• <em>Honesty</em>: Truthfulness.<br>• <em>Genuine</em>: Real.<br>• <em>Jubilant</em>: Happy." 
+    },
+    { 
+        type: 'mcq', 
+        q: "Antonym of PREDICTABLE", 
+        options: ["Kindle", "Unused", "Turbulent", "Unpredictable"], 
+        answer: 3, 
+        explanation: "<strong>Predictable</strong> means able to be predicted.<br>• <strong>Unpredictable</strong> (Correct): Not able to be predicted.<br>• <em>Kindle</em>: Light fire.<br>• <em>Unused</em>: Not utilized.<br>• <em>Turbulent</em>: Chaotic." 
+    },
 
     // Idioms
     { type: 'mcq', q: "Idiom: 'To make inroads'", options: ["To succeed by reducing the power of something else", "An unworthy person in the family", "To be in a bad mood", "To be in a difficult situation"], answer: 0, explanation: "Means <strong>to progress or succeed</strong>, especially at the expense of something else." },
