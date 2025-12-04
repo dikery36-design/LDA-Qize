@@ -277,9 +277,13 @@ nav {
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    background-color: #f9fafb;
+    background-color: var(--card-bg); /* Use card-bg for consistency with other cards when sticky */
     border-radius: 0.5rem;
     border: 1px solid var(--border);
+    position: sticky; /* Make it sticky */
+    top: 0;          /* Stick to the top of the viewport */
+    z-index: 100;    /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow for elevation */
 }
 
 .filter-controls {
