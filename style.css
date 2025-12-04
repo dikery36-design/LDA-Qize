@@ -273,6 +273,7 @@ nav {
 .filter-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem;
@@ -281,13 +282,20 @@ nav {
     border: 1px solid var(--border);
 }
 
+.filter-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+}
+
 .filter-container label {
     font-weight: 600;
     color: var(--text-main);
 }
 
 .filter-container select {
-    flex: 1;
+    width: 100%;
     max-width: 300px;
     padding: 0.5rem 1rem;
     border: 1px solid var(--border);
@@ -313,6 +321,7 @@ nav {
     color: var(--text-light);
     font-size: 0.9rem;
     font-weight: 500;
+    white-space: nowrap; /* Prevent wrapping */
 }
 
 #score-display {
@@ -357,11 +366,20 @@ nav {
     cursor: pointer;
     text-align: left;
     transition: all 0.2s;
+    -webkit-tap-highlight-color: transparent; /* Remove tap highlight */
 }
 
-.opt-btn:hover {
-    border-color: var(--primary);
+/* Prevent sticky hover on mobile */
+@media (hover: hover) {
+    .opt-btn:hover {
+        border-color: var(--primary);
+        background-color: #eff6ff;
+    }
+}
+
+.opt-btn:active {
     background-color: #eff6ff;
+    transform: scale(0.99);
 }
 
 .opt-btn.correct {

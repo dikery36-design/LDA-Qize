@@ -1153,6 +1153,9 @@ function loadState() {
         
         if (item.type === 'mcq') {
             const parent = document.getElementById(`q-${idx}`);
+            // If filtered out, skip UI restoration for this item
+            if (!parent) return;
+
             const buttons = parent.querySelectorAll('.opt-btn');
             const feedback = document.getElementById(`fb-${idx}`);
             
@@ -1173,6 +1176,9 @@ function loadState() {
             showExplanation(idx, feedback);
         } else if (item.type === 'text') {
             const input = document.getElementById(`in-${idx}`);
+            // If filtered out, skip
+            if (!input) return;
+
             const feedback = document.getElementById(`fb-${idx}`);
             
             input.value = data.userAns;
